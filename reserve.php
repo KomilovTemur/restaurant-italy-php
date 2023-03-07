@@ -8,7 +8,7 @@ if (!empty($_POST)) {
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	try {
-		$pdo = new PDO("mysql:host=localhost;dbname=restaurant", 'root', 'root');
+		$pdo = new PDO("mysql:host=localhost;dbname=restaurant", 'root', '');
 		$sql = "INSERT INTO reserve (date, time, guests, additional, name, email, phone) VALUES ('$date', '$time', '$guests', '$additional', '$name', '$email', '$phone')";
 		$query = $pdo->prepare($sql);
 		$query->execute();
