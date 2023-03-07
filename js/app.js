@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // $(selector).val();
   $("button[type=submit]").click(function (e) {
     e.preventDefault();
     $date = $("input[name='date']").val();
